@@ -187,7 +187,7 @@ bindsym $mod+Shift+minus gaps inner current minus 3
 bindsym $mod+Shift+T exec --no-startup-id /usr/bin/thunar
 bindsym $mod+Shift+Return exec --no-startup-id /usr/bin/firefox
 bindsym $mod+d exec --no-startup-id /usr/bin/rofi -show run
-
+bindsym $mod+Escape --no-startup-id /usr/bin/i3lock
 exec --no-startup-id xset s 10000 20000
 exec --no-startup-id xset dpms 0 0 60000
 exec --no-startup-id xrandr -r 75
