@@ -1,0 +1,20 @@
+#!/bin/bash
+# written by kvorshk and bipolar
+# Distributed under the GPL version2
+
+ans=n
+while [ "${ans,,}" != "y" ]; do
+	echo What are we copying?
+	read input
+	echo Where is it going?
+	read output
+	echo To copy is... $input , and it is going... $output
+	echo "right (y/n)?"
+	read ans
+done
+
+cp $input $output
+
+echo Details for $output
+
+ls -lh $output
